@@ -30,5 +30,32 @@ function maxMultiple(divisor, bound){
 //omg... this is so much simpler
   function daFrig(a,b){
     return a-a%b
+    
   }
   console.log(daFrig(17,6))
+
+
+  /** JavaScript Arrays support a filter function (starting in JavaScript 1.6). Use the filter functionality to complete the function given**/
+
+  //P.R.E.P
+
+  //Parameter - an array will be given, the array values will all be numbers, and they will all be positive
+
+  //Return - to the console
+
+  //Example - getEvenNumbers([2,4,5,6]) // should == [2,4,6]
+
+  //Pseudo code
+
+  function getEvenNumbers(numbersArray){
+    
+//filter through the array
+
+//if there is a remainder of 0, keep
+
+    let evenValues = numbersArray.filter((number) => number % 2 == 0);
+    return evenValues
+
+  }
+
+  console.log(getEvenNumbers([1,2,3,4,5,6]))
