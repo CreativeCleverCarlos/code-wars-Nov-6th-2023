@@ -59,3 +59,34 @@ function maxMultiple(divisor, bound){
   }
 
   console.log(getEvenNumbers([1,2,3,4,5,6]))
+
+
+  /** Given a 2D ( nested ) list ( array, vector, .. ) of size m * n, your task is to find the sum of the minimum values in each row.**/
+
+  //P.R.E.P
+
+  //Parameter - Arrays will be given, the arrays will only have numbers within it, all of which are positive
+
+  //Return - to the console a number
+
+  /**Example - [ [ 1, 2, 3, 4, 5 ]        #  minimum value of row is 1
+, [ 5, 6, 7, 8, 9 ]        #  minimum value of row is 5
+, [ 20, 21, 34, 56, 100 ]  #  minimum value of row is 20
+]. A sum total of 26 should be returned (1 + 5 + 20) **/
+
+function sumOfMinimums(arr) {
+
+    //Pseudo code
+
+  let total = 0;
+  
+  for (let i = 0; i < arr.length; i++){
+  //the "..." is referred to as a destructuring assignment. It allows this method to work on an array 
+  // let lowestValue = Math.min(... arr)
+   total += Math.min(...arr[i])
+  }
+  
+  return total;
+}
+
+console.log(sumOfMinimums([[5,3,6,4], [4,3,9,1]])) 
