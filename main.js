@@ -27,3 +27,8 @@ function maxMultiple(divisor, bound){
 
   }
   console.log(maxMultiple(9, 28))
+//omg... this is so much simpler
+  function daFrig(a,b){
+    return a-a%b
+  }
+  console.log(daFrig(17,6))
